@@ -1,4 +1,4 @@
-package RockPaperScissors.RockPaperScissors;
+package RockPaperScissors3;
 
 public class Player {
     private int score;
@@ -24,11 +24,4 @@ public class Player {
     public String getName(){
         return name;
     }
-
-    public void rageQuit(){
-        System.exit(0);
-    }
-
-    public String toString(){
-        return "Name;" +this.name+ "Score:" + this .score;}
 }
