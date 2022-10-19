@@ -1,4 +1,4 @@
-package RockPaperScissors3;
+package games;
 
 import java.util.Random;
 

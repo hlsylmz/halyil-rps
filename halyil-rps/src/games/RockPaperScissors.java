@@ -1,4 +1,4 @@
-package RockPaperScissors3;
+package games;
 
 import java.util.Scanner;
 
@@ -36,6 +36,7 @@ public class RockPaperScissors {
             String choice = scanner.nextLine();
             String stringresult = "";
             int intresult = aIFist.play();
+
 
             if (intresult == Fist.ROCK) {
                 stringresult = "ROCK";
