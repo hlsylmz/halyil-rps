@@ -7,8 +7,11 @@ public class Fist {
      public static final int ROCK=0;
      public static final int PAPER=1;
      public static final int SCISSORS=2;
-      Random random;
 
+    //@TODO: If the fields are not declared as private they can be manipulated from outside
+    Random random;
+
+    //@TODO: declare the methods access modifier: public, private or protected
     Fist(){random=new Random();}
 
 
