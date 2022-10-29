@@ -1,6 +1,7 @@
 package Day402AccesModifiersFinalKeyWordMethodHiding;
 
-import Day40AccessModifiersFinalKeyWordMehtodHiding.Car;
+import Day40AccesModifiersFinalKeyWordMethodHiding.Car;
+//import Day40AccessModifiersFinalKeyWordMehtodHiding.Car;
 
 public class CarTest {
     public static void main(String[] args) {
