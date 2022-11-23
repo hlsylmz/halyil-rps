@@ -4,6 +4,7 @@ package Garage;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 import static javax.swing.UIManager.get;
 
@@ -23,11 +24,13 @@ public class Garage {
         vehicleList.add(new Bus("trtr20","vit",2013,60));
         vehicleList.add(new Bus("trtr10","vit",2012,50));
 
-
         //System.out.println(vehicleList.toString());
         //System.out.println("Fordon med registreringsnummer " + "gck90k " + "finns på plats " + getParkingLotNoByVehicleRegNo("trtr100"));
-parkVehicle("trtr80");
-lista(vehicleList);
+        parkVehicle("trtr80");
+        lista(vehicleList);
+        soka("trtr100");
+        soka("trtr110");
+        korut();
     }
 
     static int getParkingLotNoByVehicleRegNo(String regNo){
@@ -53,8 +56,6 @@ lista(vehicleList);
             System.out.println("Du kan parkera");
         }
     }
-
-
 }
 public  static void  lista(ArrayList<Vehicle>vehicleList) {
     ArrayList<Vehicle> carlist = new ArrayList<>();
@@ -81,4 +82,35 @@ public  static void  lista(ArrayList<Vehicle>vehicleList) {
     System.out.println(airplanelist);
 
 }
+public static void korut(){
+String registeringsnummer="";
+    Scanner sc= new Scanner(System.in);
+    System.out.println("Vill du köra ut? Vad är din registeringsnummer?");
+    try{
+        registeringsnummer=sc.next();
+        //System.out.println("Det gick bra");
+    }catch (Exception e){
+        System.out.println("Det gick fel. Kan du ge det igen?");
+    }for (int i = 0; i < vehicleList.size(); i++) {
+        if(vehicleList.get(i).getRegisteringsnummer().equals(registeringsnummer)){
+            System.out.println("Du kan köra ut");
+            break;
+        }else{
+            System.out.println("Din bil är inte i garaget");
+            break;
+        }
+}
+
+}
+public static void soka(String registeringsnummer){
+        for(int i=0; i<vehicleList.size(); i++){
+            if(vehicleList.get(i).getRegisteringsnummer().equals(registeringsnummer)){
+                System.out.println("Ja det finns i garaget");
+                break;
+    }else{
+                System.out.println("nej det finns inte i garaget");
+                break;
+            }
+}
+    }
 }
