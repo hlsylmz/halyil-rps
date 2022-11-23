@@ -25,14 +25,14 @@ public class SearchInJava {
         int[] arr = {12, 27, 8, 11, 91, 2, 9, 57};
         System.out.println("Array Before Bubble Sort");
         for (int i = 0; i < arr.length; i++) {
-            //System.out.print(arr[i] + " ");
+           // System.out.print(arr[i] + " ");
         }
         System.out.println(Arrays.toString(arr));
         System.out.println();
         bubbleSort(arr);//sorting array elements using bubble sort
         System.out.print("Array After Bubble Sort ");
         for (int i = 0; i < arr.length; i++) {
-           // System.out.print(arr[i] + " ");
+          // System.out.print(arr[i] + " ");
 
         }System.out.println(Arrays.toString(arr));
 
@@ -42,7 +42,7 @@ public class SearchInJava {
 
     }
     public static void bubbleSort(int[] arr) {
-        int temp = 0;
+        int temp ;
         for (int i = 0; i < arr.length; i++) {
             for (int j = 1; j < arr.length ; j++) {
                 if (arr[j - 1] > arr[j]) {
@@ -64,7 +64,6 @@ public class SearchInJava {
             midIndex =(int) Math.floor(startIndex + endIndex)/2;
 
             if (arr[midIndex] == searchElement) {
-                midIndex=midIndex;
                 System.out.println("searchElement is " +arr[midIndex]+ " and index of searchElement is "+midIndex);
                 break;
             }
